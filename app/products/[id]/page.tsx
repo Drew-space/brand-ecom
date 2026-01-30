@@ -18,7 +18,8 @@ const ProductPage = async ({ params }: ProductPageProps) => {
     return <p>Product not found</p>;
   }
 
-  const { images, name, price, desc } = product;
+  const { name, price, desc } = product;
+  const images = product.images as string[];
 
   return (
     <div className="bg-white">
