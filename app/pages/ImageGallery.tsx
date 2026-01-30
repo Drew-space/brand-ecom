@@ -3,13 +3,13 @@ import Image, { StaticImageData } from "next/image";
 import { useState } from "react";
 
 interface ImageGalleryProps {
-  images: (string | StaticImageData)[];
+  images: string[];
 }
 
 const ImageGallery = ({ images }: ImageGalleryProps) => {
-  const [bigImage, setBigImage] = useState<string | StaticImageData>(images[0]);
+  const [bigImage, setBigImage] = useState(images[0]);
 
-  const handleSmallImageClick = (image: string | StaticImageData) => {
+  const handleSmallImageClick = (image: string) => {
     setBigImage(image);
   };
 
