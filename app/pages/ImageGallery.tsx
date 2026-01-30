@@ -1,15 +1,15 @@
 "use client";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { useState } from "react";
 
 interface ImageGalleryProps {
-  images: string[];
+  images: (string | StaticImageData)[];
 }
 
 const ImageGallery = ({ images }: ImageGalleryProps) => {
-  const [bigImage, setBigImage] = useState(images[0]);
+  const [bigImage, setBigImage] = useState<string | StaticImageData>(images[0]);
 
-  const handleSmallImageClick = (image: string) => {
+  const handleSmallImageClick = (image: string | StaticImageData) => {
     setBigImage(image);
   };
 
