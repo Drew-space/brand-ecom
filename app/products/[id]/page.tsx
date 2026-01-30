@@ -24,7 +24,7 @@ const ProductPage = async ({ params }: ProductPageProps) => {
     <div className="bg-white">
       <div className="mx-auto max-w-7xl px-4 md:px-8 mt-8  ">
         <div className="grid gap-8 md:grid-cols-2 max-w-4xl mx-auto">
-          <ImageGallery images={images} />
+          <ImageGallery images={images as string[]} />
 
           <div className="md:py-8">
             <h2 className="text-2xl font-bold text-gray-800 lg:text-3xl">
