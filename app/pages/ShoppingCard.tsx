@@ -50,11 +50,8 @@ const ShoppingCard = ({ product }: ShoppingCardProps) => {
           <div
             className="relative w-full h-48 rounded-xl overflow-hidden"
             style={{
-              backgroundImage: `url(${
-                typeof product.images[0] === "string"
-                  ? product.images[0]
-                  : product.images[0].src
-              })`,
+              backgroundImage: `url(${product.images[0]})`,
+
               backgroundPosition: "center",
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
