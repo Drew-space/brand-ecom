@@ -5,5 +5,5 @@ export interface Product {
   name: string;
   price: number;
   desc: string;
-  images: string[] | StaticImageData[];
+  images: (string | StaticImageData)[];
 }
