@@ -9,11 +9,11 @@ import { usePathname } from "next/navigation";
 const Navbar = () => {
   const pathname = usePathname();
   return (
-    <nav className="container mx-auto w-full  md:py-4 font-primary  px-4  ">
+    <nav className="container mx-auto w-full  md:py-4 font-primary  px-4  max-sm:sticky max-sm:top-1 max-sm:bg-white max-sm:z-10  ">
       <div className=" flex justify-between items-center py-2 mt-2 px-4   border-2 md:border-black/15 lg:border-black  rounded-2xl">
         <div>
-          <h1 className=" font-bold md:text-3xl tracking-tighter ">
-            HappyFeet
+          <h1 className=" font-bold md:text-3xl tracking-tighter hover:cursor-pointer  ">
+            <Link href="/">HappyFeet</Link>
           </h1>
         </div>
         <div className="  items-center  hidden lg:flex">

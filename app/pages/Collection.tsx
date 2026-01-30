@@ -13,7 +13,7 @@ const Collection = () => {
         <h3>See All</h3>
       </div>
 
-      <div className="grid gap-2 grid-cols-1 md:grid-cols-3 lg:grid-cols-4 justify-items-center ">
+      <div className="grid gap-2 grid-cols-1 md:grid-cols-3 lg:grid-cols-4 justify-items-center    ">
         {products.map((product: Product) => (
           <ShoppingCard key={product.id} product={product} />
         ))}

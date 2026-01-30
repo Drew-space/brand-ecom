@@ -260,12 +260,7 @@ export const products: Product[] = [
     name: "Women Fashion Set 2",
     price: 15500,
     desc: "Stylish women’s outfit with a modern design.",
-    images: [
-      "/img/woman2a.avif",
-      "/img/woman2b.avif",
-      "/img/woman2c.avif",
-      "/img/woman2d.avif",
-    ],
+    images: ["/img/woman2a.avif", "/img/woman2b.avif", "/img/woman2c.avif"],
   },
   {
     id: "woman-3",
